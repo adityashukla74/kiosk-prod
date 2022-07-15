@@ -1,0 +1,183 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,600,700,900);
+
+@font-face {
+  font-family: Lato !important;
+  font-weight: 300;
+  src: url("/fonts/Lato/Lato-Regular.ttf");
+  
+}
+
+@font-face {
+  font-family: Lato !important;
+  font-weight: 400;
+  src: url("/fonts/Lato/Lato-Regular.ttf");
+  
+}
+
+@font-face {
+  font-family: Lato !important;
+  font-weight: 700;
+  src: url("/fonts/Lato/Lato-Regular.ttf");
+}
+
+@font-face {
+  font-family: Lato !important;
+  font-weight: 900;
+  src: url("/fonts/Lato/Lato-Regular.ttf");
+  
+}
+@font-face {
+  font-family: Lato !important;
+  font-weight: 600;
+  src: url("/fonts/Lato/Lato-Regular.ttf");
+}
+
+* {
+  font-family: Lato !important;
+}
+
+.ui.button {
+  font-family: Lato !important;
+}
+
+html,
+body {
+  font-family: Lato !important;
+}
+
+
+/* scanner align center */
+#container1 {
+  color: white;
+  width: 1920px;
+  height: 1080px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#content {
+  width: 477px;
+  height: 477px;
+}
+/* scanner align center */
+
+.row {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+.col {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+span {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.zoom-in-out-box {
+  animation: zoom-in-zoom-out 1s ease infinite;
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.5, 1.5);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.ui.input>input {
+  border: 1px solid #808080;
+  color: #999999;
+}
+
+.ui.input>input::placeholder {
+  color: #999999;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  margin-left: 24px;
+  margin-top: 28px;
+  margin-bottom: 28px;
+}
+
+
+/* image slider  */
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+/* image slider  */
