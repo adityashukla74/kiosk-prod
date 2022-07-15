@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 
-export default function scanner() {
+export default function Scanner() {
     const [data, setData] = useState('No result');
     return (
         <>
