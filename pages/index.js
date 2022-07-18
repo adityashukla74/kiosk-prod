@@ -2,8 +2,15 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Link from 'next/link'
+import Slider from "@madzadev/image-slider";
+import "@madzadev/image-slider/dist/index.css";
 
 export default function Home() {
+  const images = [
+    { url: "https://picsum.photos/seed/a/1600/900" },
+    { url: "https://picsum.photos/seed/b/1920/1080" },
+    { url: "https://picsum.photos/seed/c/1366/768" },
+  ];
 
   async function pickUpCodeSms1() {
     console.log('For in-store pickup, you can scan the QR code - https://i.postimg.cc/V687pb39/QR-CODE-FOR-scan.png OR use this pickup code 77865');
@@ -58,12 +65,13 @@ export default function Home() {
           marginRight: '64px'
         }}
       >
-        <Image
+        {/* <Image
           alt="Image Alt"
           src="/kiosk-banner.png"
           width={1792}
           height={504}
-        />
+        /> */}
+        <Slider imageList={images} width={1792} height={504} />
       </div>
       <div style={{ textAlign: "center", marginTop: '96px' }}>
         <span
