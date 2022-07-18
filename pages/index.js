@@ -7,9 +7,9 @@ import "@madzadev/image-slider/dist/index.css";
 
 export default function Home() {
   const images = [
-    { url: "https://picsum.photos/seed/a/1600/900" },
-    { url: "https://picsum.photos/seed/b/1920/1080" },
-    { url: "https://picsum.photos/seed/c/1366/768" },
+    { url: "https://i.ibb.co/1JzP4jb/header1.png" },
+    { url: "https://i.ibb.co/5vhV83Q/header2.png" },
+    { url: "https://i.ibb.co/rF3WjpR/header3.png" },
   ];
 
   async function pickUpCodeSms1() {
@@ -65,13 +65,16 @@ export default function Home() {
           marginRight: '64px'
         }}
       >
-        {/* <Image
-          alt="Image Alt"
-          src="/kiosk-banner.png"
-          width={1792}
-          height={504}
-        /> */}
-        <Slider imageList={images} width={1792} height={504} />
+
+        <Slider 
+          imageList={images} 
+          width={1792} 
+          height={504} 
+          autoPlay={true} 
+          loop={true} 
+          showArrowControls={false} 
+          showDotControls={false}
+        />
       </div>
       <div style={{ textAlign: "center", marginTop: '96px' }}>
         <span
