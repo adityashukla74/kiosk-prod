@@ -6,11 +6,11 @@ const client = require("twilio")(
   const sendmessage = async (req, res) => {
     res.statusCode = 200;
     res.setHeader("Content-Type", "application/json");
-  
+    
     client.messages
       .create({
         from: process.env.TWILIO_FROM_PHONE_NUMBER,
-        to: process.env.TWILIO_TO_CUSTOMER,
+        to: process.env.TWILIO_TO_ASSOCIATE,
         body: req.body.body,
       })
       .then(() => {
@@ -23,3 +23,4 @@ const client = require("twilio")(
   };
 
   export default sendmessage;
+
